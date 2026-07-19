@@ -1,0 +1,60 @@
+name: Data/content issue
+description: Report a factual error, ambiguity, duplicate, attribution gap, or licensing concern.
+title: "[Content]: "
+labels: [content]
+body:
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Incorrect fact or answer
+        - Ambiguous prompt
+        - Missing or incorrect accepted alias
+        - Duplicate / near duplicate
+        - Difficulty or category mismatch
+        - Outdated or time-sensitive claim
+        - Attribution or license concern
+        - Cultural or respectful-language concern
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: identifier
+    attributes:
+      label: Content identifier
+      description: Question ID, knowledge-unit slug, or a short non-copyrighted description.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Explain the issue without pasting third-party clue text or personal data.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reliable references
+      description: Link to sources and note relevant publication/access dates.
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested original correction
+      description: If proposing wording, write it originally and include source/license information.
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights check
+      options:
+        - label: I did not paste copied archive or game-show clue text.
+          required: true
+        - label: I will use private reporting if this concern contains sensitive rights-holder information.
+          required: true
+

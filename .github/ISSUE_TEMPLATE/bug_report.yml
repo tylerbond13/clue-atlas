@@ -1,0 +1,76 @@
+name: Bug report
+description: Report reproducible incorrect application behavior.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping Clue Atlas improve. Do not include personal learning data, secrets, or vulnerability details.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+      placeholder: The review button showed… I expected…
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Give the smallest reliable sequence of actions.
+      placeholder: |
+        1. Open…
+        2. Choose…
+        3. Observe…
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Area
+      options:
+        - Diagnostic
+        - Review / scheduler
+        - Play
+        - Knowledge Map / analytics
+        - Studio / content
+        - Export
+        - Accessibility
+        - Build / developer tooling
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Commit or deployment
+      description: Paste a commit SHA or deployment label if available.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, operating system, screen/input mode, and relevant accessibility settings.
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional evidence
+      description: Add redacted screenshots or logs. Never attach real exports or raw learner data.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed personal data, secrets, and private content.
+          required: true
+        - label: This is not a security vulnerability; I will use private reporting for those.
+          required: true
+

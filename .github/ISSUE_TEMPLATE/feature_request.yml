@@ -1,0 +1,60 @@
+name: Feature request
+description: Propose a focused improvement to learning, play, Studio, or Data Lab.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Learner problem
+      description: What is difficult today, for whom, and in what context?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe what the learner should be able to accomplish, not only a proposed component.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Learning engine
+        - Diagnostic
+        - Review
+        - Play
+        - Knowledge Map
+        - Studio / custom tracks
+        - Data Lab / export
+        - Curriculum / content
+        - Accessibility
+        - Developer experience
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and tradeoffs
+      description: Include examples, expected learning value, alternatives, and risks.
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Data or schema impact
+      description: Does this add a new event, field, metric, source, export, or personal-data use?
+
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Product principles
+      options:
+        - label: The proposal can explain why it helps learning.
+        - label: It avoids punitive engagement loops.
+        - label: It considers keyboard, motion, color, timer, and screen-reader access.
+

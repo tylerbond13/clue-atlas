@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#17131f"/>
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#f0c85a" stroke-width="2"/>
+  <path d="M32 9c7 7 10 15 10 23S39 48 32 55M32 9c-7 7-10 15-10 23s3 16 10 23M10 32h44" fill="none" stroke="#7568ee" stroke-width="2"/>
+  <text x="32" y="39" fill="#fffaf0" font-family="Georgia,serif" font-size="21" font-weight="700" text-anchor="middle">CA</text>
+</svg>
